@@ -1,0 +1,34 @@
+{
+    "repositories": [
+        {
+            "url": "https://github.com/AKikhaev/CliRemainCalc.git",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/AKikhaev/Terminal.git",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/AKikhaev/Cli.git",
+            "type": "vcs"
+        }
+    ],
+    "require": {
+        "akikhaev/terminal": "^1.0",
+        "akikhaev/cli-remain-calc": "^1.0",
+        "akikhaev/cli": "^1.0",
+        "vlucas/phpdotenv": "^4.1",
+        "ext-mbstring": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"if(!file_exists('cli')){copy('vendor/akikhaev/cli/acli.php', 'acli');}\""
+        ],
+        "post-update-cmd": [
+            "php -r \"if(!file_exists('cli')){copy('vendor/akikhaev/cli/acli.php', 'acli');}\""
+        ],
+        "post-root-package-install": [
+            "php -r \"if(!file_exists('cli')){copy('vendor/akikhaev/cli/acli.php', 'acli');}\""
+        ]
+    }
+}
