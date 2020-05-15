@@ -25,8 +25,8 @@ run parallel: (open 3 terminals to do that)
 * acli demo longProcess 1000
 * acli demo longProcess 1000
 
-###### example 
-
+###### example:
+![header image](https://raw.githubusercontent.com/AKikhaev/CliDemo/master/demo.jpg)
 ###### todo:
 * zsh complete support
 
